@@ -1,0 +1,28 @@
+.home-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+
+  .title {
+    font-weight: 700;
+    font-size: 54px;
+
+    span {
+      color: #037FFF;
+    }
+  }
+
+  .desc {
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: #a4acc4;
+  }
+
+}

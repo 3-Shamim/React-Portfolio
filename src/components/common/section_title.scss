@@ -1,0 +1,47 @@
+.section-title {
+  position: relative;
+  margin-bottom: 60px;
+  color: #ffffff;
+
+  h2 {
+    position: relative;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding-bottom: 15px;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 5px;
+      top: 100%;
+      left: 0;
+      background-color: rgba(3,127,255,.3);
+      border-radius: 5px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 5px;
+      top: 100%;
+      left: 0;
+      background-color: #037FFF;
+      border-radius: 5px;
+    }
+  }
+
+  span {
+    position: absolute;
+    font-size: 80px;
+    line-height: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    top: 100%;
+    color: rgba(25,29,43,.44);
+  }
+}
