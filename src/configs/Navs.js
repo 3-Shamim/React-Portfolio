@@ -1,4 +1,4 @@
-import {ABOUT_SLUG, HOME_SLUG} from "./Slugs";
+import {ABOUT_SLUG, CONTACT_SLUG, HOME_SLUG} from "./Slugs";
 
 export const Navs = [
     {
@@ -10,5 +10,10 @@ export const Navs = [
         path: ABOUT_SLUG,
         exact: true,
         name: "About"
+    },
+    {
+        path: CONTACT_SLUG,
+        exact: true,
+        name: "Contact"
     },
 ]
