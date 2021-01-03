@@ -1,0 +1,74 @@
+.contact-section {
+  color: #ffffff;
+
+  .contact {
+    .form-tile {
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+
+    .contact-form {
+
+      .contact-form-group {
+        position: relative;
+
+        .form-label-style {
+          position: absolute;
+          top: -12px;
+          left: 15px;
+          color: #a4acc4;
+          background-color: #10121B;
+          padding: 0 5px;
+        }
+
+        .form-control-style {
+          background-color: transparent;
+          border-radius: 0;
+          border: 1px solid #2e344e;
+        }
+      }
+
+      .send-mail-btn {
+        border-radius: 0;
+      }
+    }
+
+    .contact-details {
+      .card-style {
+        border: none;
+        margin-bottom: 20px;
+
+        .card-body-style {
+          display: flex;
+          background-color: #191d2b;
+          color: white;
+
+          .icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #2e344e;
+            margin-right: 20px;
+
+            svg {
+              color: #a4acc4;
+              font-size: 26px;
+            }
+          }
+
+          .card-details {
+            .card-text-style {
+              color: #a4acc4;
+              font-size: 16px;
+              margin-bottom: 0;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
