@@ -1,0 +1,100 @@
+.skill-section {
+  color: #ffffff;
+
+  .skill {
+    .progress-bar-content {
+      margin-bottom: 30px;
+
+      h6 {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .progress-style {
+        display: flex;
+        align-items: center;
+
+        p {
+          margin: 0;
+          padding-right: 15px;
+        }
+
+        .progress {
+          height: 7px;
+          border-radius: 0;
+          background-color: #2e344e;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.resume-section {
+  color: #ffffff;
+
+  .work-experience-content {
+    .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      svg {
+        font-size: 26px;
+        margin-right: 15px;
+      }
+
+      h4 {
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+    }
+
+    .details {
+      border-left: 3px solid #2e344e;
+
+      .left {
+        position: relative;
+
+        p {
+          font-size: 18px;
+          padding-left: 20px;
+          color: #a4acc4;
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: 6px;
+          left: 6px;
+          width: 15px;
+          height: 15px;
+          background-color: #10121b;
+          border-radius: 50%;
+          border: 3px solid #2e344e;
+        }
+      }
+
+      .right {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -31px;
+          top: 15px;
+          height: 1px;
+          width: 30px;
+          background: #2e344e;
+
+        }
+
+        h5 {
+          margin-top: 5px;
+          font-weight: 700;
+          color: #037fff;
+        }
+      }
+    }
+  }
+}
