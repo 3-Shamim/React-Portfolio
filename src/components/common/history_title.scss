@@ -1,0 +1,19 @@
+.history-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  color: #ffffff;
+
+  span {
+    svg {
+      font-size: 26px;
+      margin-right: 15px;
+    }
+  }
+
+  h4 {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+}

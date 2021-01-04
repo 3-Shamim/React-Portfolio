@@ -4,6 +4,8 @@ import "./resume.scss"
 import SectionTitle from "../common/SectionTitle";
 import {Col, Container, ProgressBar, Row} from "react-bootstrap";
 import {FiBookOpen, FiBriefcase} from "react-icons/all";
+import ResumeHistory from "../common/ResumeHistory";
+import HistoryTitle from "../common/HistoryTitle";
 
 const Resume = () => {
 
@@ -11,6 +13,52 @@ const Resume = () => {
     const cssStrength = 93;
     const javaStrength = 97;
     const springBootStrength = 91;
+
+    const educationalExperience = [
+        {
+            id: 1,
+            designation: "Bachelor of Science",
+            from: "2016",
+            to: "2020",
+            organizationName: "Southeast University",
+            aboutOrganization: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,\n" +
+                "                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam\n" +
+                "                                    placeat libero. Deleniti"
+        },
+        {
+            id: 2,
+            designation: "Higher School Graduation",
+            from: "2012",
+            to: "2014",
+            organizationName: "Abc College",
+            aboutOrganization: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,\n" +
+                "                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam\n" +
+                "                                    placeat libero. Deleniti"
+        }
+    ];
+
+    const workExperience = [
+        {
+            id: 1,
+            designation: "Frontend Web Developer",
+            from: "2018",
+            to: "2020",
+            organizationName: "Abc Company",
+            aboutOrganization: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,\n" +
+                "                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam\n" +
+                "                                    placeat libero. Deleniti"
+        },
+        {
+            id: 2,
+            designation: "Frontend Web Developer",
+            from: "2020",
+            to: "Present",
+            organizationName: "Abc Company",
+            aboutOrganization: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,\n" +
+                "                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam\n" +
+                "                                    placeat libero. Deleniti"
+        }
+    ];
 
     return (
         <Fragment>
@@ -56,76 +104,31 @@ const Resume = () => {
 
             <Container className="resume-section">
                 <SectionTitle title="Resume"/>
-                <div className="work-experience-content">
-                    <div className="title">
-                        <FiBriefcase/>
-                        <h4>Working experience</h4>
-                    </div>
-                    <div className="details">
-                        <Row>
-                            <Col lg={3} className="left">
-                                <p>2018 - Present</p>
-                            </Col>
+                <HistoryTitle icon={<FiBriefcase/>} title={"Working experience"}/>
+                {
+                    workExperience && workExperience.map(item =>
+                        <ResumeHistory key={item.id}
+                                       designation={item.designation}
+                                       to={item.to}
+                                       from={item.from}
+                                       organizationName={item.organizationName}
+                                       aboutOrganization={item.aboutOrganization}
+                        />
+                    )
+                }
 
-                            <Col lg={9} className="right">
-                                <h5>Frontend Web Developer</h5>
-                                <p className="organization-name">Abc Company</p>
-                                <p className="organization-details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,
-                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam
-                                    placeat libero. Deleniti</p>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col lg={3} className="left">
-                                <p>2012 - Present</p>
-                            </Col>
-
-                            <Col lg={9} className="right">
-                                <h5>Frontend Web Developer</h5>
-                                <p className="organization-name">Abc Company</p>
-                                <p className="organization-details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,
-                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam
-                                    placeat libero. Deleniti</p>
-                            </Col>
-                        </Row>
-                    </div>
-                </div>
-
-
-                <div className="educational-content work-experience-content">
-                    <div className="title">
-                        <FiBookOpen/>
-                        <h4>Educational Qualifications</h4>
-                    </div>
-                    <div className="details">
-                        <Row>
-                            <Col lg={3} className="left">
-                                <p>2016 - 2020</p>
-                            </Col>
-
-                            <Col lg={9} className="right">
-                                <h5>Bachelor of Science</h5>
-                                <p className="organization-name">Abc University</p>
-                                <p className="organization-details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,
-                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam
-                                    placeat libero. Deleniti</p>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col lg={3} className="left">
-                                <p>2012 - 2013</p>
-                            </Col>
-
-                            <Col lg={9} className="right">
-                                <h5>Higher School Graduation</h5>
-                                <p className="organization-name">Abc College</p>
-                                <p className="organization-details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,
-                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam
-                                    placeat libero. Deleniti</p>
-                            </Col>
-                        </Row>
-                    </div>
-                </div>
+                <HistoryTitle icon={<FiBookOpen/>} title={"Educational Qualification"}/>
+                {
+                    educationalExperience && educationalExperience.map(item =>
+                        <ResumeHistory key={item.id}
+                            designation={item.designation}
+                            to={item.to}
+                            from={item.from}
+                            organizationName={item.organizationName}
+                            aboutOrganization={item.aboutOrganization}
+                        />
+                    )
+                }
             </Container>
         </Fragment>
     );
