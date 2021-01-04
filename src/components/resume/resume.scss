@@ -7,7 +7,7 @@
 
       h6 {
         font-weight: 700;
-        text-transform: uppercase;
+        font-size: 20px;
       }
 
       .progress-style {
@@ -34,10 +34,12 @@
   color: #ffffff;
 
   .work-experience-content {
+    margin-bottom: 50px;
+
     .title {
       display: flex;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
 
       svg {
         font-size: 26px;
@@ -57,7 +59,7 @@
         position: relative;
 
         p {
-          font-size: 18px;
+          font-size: 20px;
           padding-left: 20px;
           color: #a4acc4;
         }
@@ -90,11 +92,22 @@
         }
 
         h5 {
-          margin-top: 5px;
+          font-size: 25px;
           font-weight: 700;
           color: #037fff;
+        }
+
+        .organization-name {
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .organization-details {
+          color: #a4acc4;
+          font-size: 18px;
         }
       }
     }
   }
+
 }
