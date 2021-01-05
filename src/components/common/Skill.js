@@ -1,5 +1,6 @@
 import React from "react";
 import {Col, ProgressBar} from "react-bootstrap";
+import "./skill.scss";
 
 const Skill = ({skillName, strength}) => {
     return (

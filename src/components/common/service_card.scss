@@ -1,0 +1,73 @@
+.service-card {
+  position: relative;
+  border: 1px solid #2e344e;
+  border-top: 5px solid #2e344e;
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: #191d2b;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 5px;
+    top: -5px;
+    left: 0;
+    background-color: #1e7fff;
+    transition: .4s ease-in-out;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1e7fff;
+    transition: .4s ease-in-out;
+  }
+
+  &:hover::after {
+    height: 100%;
+  }
+
+  .service-card-header {
+    svg {
+      font-size: 30px;
+      color: #1e7fff;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      position: relative;
+      color: #ffffff;
+      font-weight: 600;
+      padding-bottom: 15px;
+      margin-bottom: 14px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 50px;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        background-color: #2e344e;
+      }
+    }
+
+  }
+
+  .description {
+    color: #a4acc4;
+    margin-bottom: 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+}
