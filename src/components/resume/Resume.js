@@ -2,17 +2,36 @@ import React, {Fragment} from 'react';
 
 import "./resume.scss"
 import SectionTitle from "../common/SectionTitle";
-import {Col, Container, ProgressBar, Row} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
 import {FiBookOpen, FiBriefcase} from "react-icons/all";
 import ResumeHistory from "../common/ResumeHistory";
 import HistoryTitle from "../common/HistoryTitle";
+import Skill from "../common/Skill";
 
 const Resume = () => {
 
-    const htmlStrength = 98;
-    const cssStrength = 93;
-    const javaStrength = 97;
-    const springBootStrength = 91;
+    const skill = [
+        {
+            id: 1,
+            skillName: "HTML",
+            strength: 98
+        },
+        {
+            id: 2,
+            skillName: "CSS",
+            strength: 93
+        },
+        {
+            id: 3,
+            skillName: "Java",
+            strength: 97
+        },
+        {
+            id: 4,
+            skillName: "Spring Boot",
+            strength: 91
+        }
+    ]
 
     const educationalExperience = [
         {
@@ -65,40 +84,15 @@ const Resume = () => {
             <Container className="skill-section">
                 <SectionTitle title="My Skills"/>
                 <Row className="skill">
-                    <Col lg={6}>
-                        <div className="progress-bar-content">
-                            <h6>HTML</h6>
-                            <div className="progress-style">
-                                <p>{htmlStrength}%</p>
-                                <ProgressBar now={htmlStrength} label={`${htmlStrength}%`} srOnly/>
-                            </div>
-                        </div>
 
-                        <div className="progress-bar-content">
-                            <h6>CSS</h6>
-                            <div className="progress-style">
-                                <p>{cssStrength}%</p>
-                                <ProgressBar now={cssStrength} label={`${cssStrength}%`} srOnly/>
-                            </div>
-                        </div>
-                    </Col>
-
-                    <Col lg={6}>
-                        <div className="progress-bar-content">
-                            <h6>Java</h6>
-                            <div className="progress-style">
-                                <p>{javaStrength}%</p>
-                                <ProgressBar now={javaStrength} label={`${javaStrength}%`} srOnly/>
-                            </div>
-                        </div>
-                        <div className="progress-bar-content">
-                            <h6>Spring Boot</h6>
-                            <div className="progress-style">
-                                <p>{springBootStrength}%</p>
-                                <ProgressBar now={springBootStrength} label={`${springBootStrength}%`} srOnly/>
-                            </div>
-                        </div>
-                    </Col>
+                    {
+                        skill && skill.map(item =>
+                            <Skill key={item.id}
+                                   skillName={item.skillName}
+                                   strength={item.strength}
+                            />
+                        )
+                    }
                 </Row>
             </Container>
 
@@ -121,11 +115,11 @@ const Resume = () => {
                 {
                     educationalExperience && educationalExperience.map(item =>
                         <ResumeHistory key={item.id}
-                            designation={item.designation}
-                            to={item.to}
-                            from={item.from}
-                            organizationName={item.organizationName}
-                            aboutOrganization={item.aboutOrganization}
+                                       designation={item.designation}
+                                       to={item.to}
+                                       from={item.from}
+                                       organizationName={item.organizationName}
+                                       aboutOrganization={item.aboutOrganization}
                         />
                     )
                 }

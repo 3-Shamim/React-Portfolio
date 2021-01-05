@@ -1,0 +1,27 @@
+.skill {
+  .progress-bar-content {
+    margin-bottom: 30px;
+
+    h6 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .progress-style {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin: 0;
+        padding-right: 15px;
+      }
+
+      .progress {
+        height: 7px;
+        border-radius: 0;
+        background-color: #2e344e;
+        width: 100%;
+      }
+    }
+  }
+}
