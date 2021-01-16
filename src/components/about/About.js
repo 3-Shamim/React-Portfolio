@@ -8,7 +8,7 @@ const About = () => {
 
     const data = {
         title: "Shamim",
-        desc: "Full-Stack java developer with specialization in building java based web applications using Spring Boot, JPA, RESTful API, Spring Security, JavaScript/Jquery, Thymeleaf, ReactJS."
+        desc: "Full-Stack developer with specialization in building java based web applications using Spring Boot, JPA, RESTful API, Spring Security, JavaScript/Jquery, Thymeleaf, ReactJS, NextJs, Flutter."
     }
 
     const information= {
