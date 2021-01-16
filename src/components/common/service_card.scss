@@ -5,6 +5,7 @@
   padding: 20px;
   margin-bottom: 25px;
   background-color: #191d2b;
+  min-height: 220px;
 
   &::before {
     position: absolute;
@@ -67,7 +68,6 @@
   .description {
     color: #a4acc4;
     margin-bottom: 0;
-    font-size: 17px;
     letter-spacing: 1px;
   }
 }

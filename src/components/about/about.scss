@@ -45,6 +45,10 @@
 
     .right {
 
+      @media screen and (max-width: 991px){
+        margin-top: 20px;
+      }
+
       h3 {
 
         font-size: 32px;

@@ -49,8 +49,8 @@ const Contact = () => {
                                 </div>
                                 <div className="card-details">
                                     <Card.Title>Phone</Card.Title>
-                                    <Card.Text className="card-text-style">+8801781405615</Card.Text>
-                                    <Card.Text className="card-text-style">+8801300498614</Card.Text>
+                                    <Card.Text className="card-text-style">+8801759177281</Card.Text>
+                                    <Card.Text className="card-text-style">+8801687430265</Card.Text>
                                 </div>
                             </Card.Body>
                         </Card>
@@ -63,8 +63,7 @@ const Contact = () => {
 
                                 <div className="card-details">
                                     <Card.Title>Email</Card.Title>
-                                    <Card.Text className="card-text-style">info.sitename@example.com</Card.Text>
-                                    <Card.Text className="card-text-style">info.sitename@example.com</Card.Text>
+                                    <Card.Text className="card-text-style">mdshamim723@gmail.com</Card.Text>
                                 </div>
                             </Card.Body>
                         </Card>
@@ -77,7 +76,7 @@ const Contact = () => {
 
                                 <div className="card-details">
                                     <Card.Title>Address</Card.Title>
-                                    <Card.Text className="card-text-style">121 King Street, Melbourne, Victoria 3000, Australia</Card.Text>
+                                    <Card.Text className="card-text-style">668/1, East Manikdi, ECB Chattar, Dhaka</Card.Text>
                                 </div>
                             </Card.Body>
                         </Card>

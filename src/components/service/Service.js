@@ -14,17 +14,17 @@ const Service = () => {
         {
             id: 1,
             serviceName: "Web Design",
-            serviceDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+            serviceDescription: "I can provide responsive web design like PSD to HTML with HTML, CSS, SCSS, JS, ReactJS, NextJS"
         },
         {
             id: 2,
-            serviceName: "Web Development",
-            serviceDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+            serviceName: "Web Application Development",
+            serviceDescription: "I can provide any kind of full stack web application by using Spring Boot, NodeJs, ReactJs, NextJS"
         },
         {
             id: 3,
             serviceName: "Mobile Application",
-            serviceDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+            serviceDescription: "I can provide mobile application by using Flutter"
         }
     ]
 

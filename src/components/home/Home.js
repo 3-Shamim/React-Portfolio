@@ -4,10 +4,16 @@ import "./home.scss";
 import {Container} from "react-bootstrap";
 
 const Home = () => {
+
+    const data = {
+        title: "Shamim",
+        desc: "Full-Stack java developer with specialization in building java based web applications using Spring Boot, JPA, RESTful API, Spring Security, JavaScript/Jquery, Thymeleaf, ReactJS."
+    }
+
     return (
         <Container className="home-section">
-            <div className="title">Hi, I am <span>Shamim</span></div>
-            <p className="desc">I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.</p>
+            <div className="title">Hi, I am <span>{data.title}</span></div>
+            <p className="desc">{data.desc}</p>
         </Container>
     );
 }

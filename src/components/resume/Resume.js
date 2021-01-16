@@ -13,69 +13,115 @@ const Resume = () => {
     const skill = [
         {
             id: 1,
-            skillName: "HTML",
-            strength: 98
+            skillName: "Java",
+            strength: 90
         },
         {
             id: 2,
-            skillName: "CSS",
-            strength: 93
+            skillName: "Spring Boot",
+            strength: 90
+        },
+        {
+            id: 8,
+            skillName: "Thymeleaf",
+            strength: 90
         },
         {
             id: 3,
-            skillName: "Java",
-            strength: 97
+            skillName: "JS",
+            strength: 90
         },
         {
             id: 4,
-            skillName: "Spring Boot",
-            strength: 91
-        }
-    ]
-
-    const educationalExperience = [
-        {
-            id: 1,
-            designation: "Bachelor of Science",
-            from: "2016",
-            to: "2020",
-            organizationName: "Southeast University",
-            aboutOrganization: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,\n" +
-                "                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam\n" +
-                "                                    placeat libero. Deleniti"
+            skillName: "ReactJS",
+            strength: 90
         },
         {
-            id: 2,
-            designation: "Higher School Graduation",
-            from: "2012",
-            to: "2014",
-            organizationName: "Abc College",
-            aboutOrganization: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,\n" +
-                "                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam\n" +
-                "                                    placeat libero. Deleniti"
+            id: 5,
+            skillName: "NextJS",
+            strength: 80
+        },
+        {
+            id: 6,
+            skillName: "NodeJS",
+            strength: 80
+        },
+        {
+            id: 7,
+            skillName: "jQuery",
+            strength: 80
+        },
+        {
+            id: 14,
+            skillName: "Dart",
+            strength: 90
+        },
+        {
+            id: 15,
+            skillName: "Flutter",
+            strength: 75
+        },
+        {
+            id: 13,
+            skillName: "Python",
+            strength: 90
+        },
+        {
+            id: 9,
+            skillName: "MySQL",
+            strength: 90
+        },
+        {
+            id: 10,
+            skillName: "PostgreSQL",
+            strength: 90
+        },
+        {
+            id: 11,
+            skillName: "Hibernate",
+            strength: 90
+        },
+        {
+            id: 12,
+            skillName: "MongoDB",
+            strength: 90
+        },
+        {
+            id: 16,
+            skillName: "GraphQL",
+            strength: 50
         }
-    ];
+    ]
 
     const workExperience = [
         {
             id: 1,
-            designation: "Frontend Web Developer",
-            from: "2018",
-            to: "2020",
-            organizationName: "Abc Company",
-            aboutOrganization: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,\n" +
-                "                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam\n" +
-                "                                    placeat libero. Deleniti"
+            designation: "Senior Software Engineer",
+            from: "December 2019",
+            to: "Present",
+            organizationName: "Zaag Systems Ltd.",
+            url: "www.zaagsys.com",
+            aboutOrganization: ""
         },
         {
             id: 2,
-            designation: "Frontend Web Developer",
-            from: "2020",
-            to: "Present",
-            organizationName: "Abc Company",
-            aboutOrganization: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia,\n" +
-                "                                    aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam\n" +
-                "                                    placeat libero. Deleniti"
+            designation: "Junior Software Engineer",
+            from: "January 2019",
+            to: "December 2019",
+            organizationName: "Vivasoft",
+            url: "www.vivasoftltd.com",
+            aboutOrganization: ""
+        }
+    ];
+
+    const educationalExperience = [
+        {
+            id: 1,
+            designation: "B. Sc Engineering in Computer Science and Engineering",
+            from: "2015",
+            to: "2019",
+            organizationName: "Southeast University, Bangladesh",
+            aboutOrganization: ""
         }
     ];
 
@@ -98,7 +144,7 @@ const Resume = () => {
 
             <Container className="resume-section">
                 <SectionTitle title="Resume"/>
-                <HistoryTitle icon={<FiBriefcase/>} title={"Working experience"}/>
+                <HistoryTitle icon={<FiBriefcase/>} title={"Working Experience"}/>
                 {
                     workExperience && workExperience.map(item =>
                         <ResumeHistory key={item.id}
@@ -107,6 +153,7 @@ const Resume = () => {
                                        from={item.from}
                                        organizationName={item.organizationName}
                                        aboutOrganization={item.aboutOrganization}
+                                       url={item.url}
                         />
                     )
                 }

@@ -5,6 +5,19 @@ import SectionTitle from "../common/SectionTitle";
 import {Col, Container, Row} from "react-bootstrap";
 
 const About = () => {
+
+    const data = {
+        title: "Shamim",
+        desc: "Full-Stack java developer with specialization in building java based web applications using Spring Boot, JPA, RESTful API, Spring Security, JavaScript/Jquery, Thymeleaf, ReactJS."
+    }
+
+    const information= {
+        name: "Md. Shamim",
+        nationality: "Bangladeshi",
+        language: "Bengali, English",
+        address: "668/1, East Manikdi, ECB Chattar, Dhaka.",
+    }
+
     return (
         <Container className="about-section">
             <SectionTitle title="About Me"/>
@@ -15,15 +28,13 @@ const About = () => {
                     </div>
                 </Col>
                 <Col className="right" lg={6}>
-                    <h3>I am <span>Devid Chester</span></h3>
-                    <p>I am a frontend web developer. I can provide clean code and pixel perfect design. I also make
-                        website more &amp; more interactive with web animations.</p>
+                    <h3>I am <span>{data.title}</span></h3>
+                    <p>{data.desc}</p>
                     <ul>
-                        <li><b>Full Name</b> Devid Chester</li>
-                        <li><b>Age</b> 24 Years</li>
-                        <li><b>Nationality</b> American</li>
-                        <li><b>Languages</b> English, French</li>
-                        <li><b>Address</b> 121 King Street, Melbourne, Australia</li>
+                        <li><b>Full Name</b> {information.name}</li>
+                        <li><b>Nationality</b> {information.nationality}</li>
+                        <li><b>Languages</b> {information.language}</li>
+                        <li><b>Address</b> {information.address}</li>
                         <li><b>Freelance</b> Available</li>
                     </ul>
                     <a className="custom-button m-t-30" href="/files/shamim.pdf">Download CV</a>
