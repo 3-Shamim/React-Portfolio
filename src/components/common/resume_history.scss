@@ -42,6 +42,7 @@
 
     .right {
       position: relative;
+      padding-left: 35px;
 
       &::before {
         content: "";
@@ -51,6 +52,10 @@
         height: 1px;
         width: 30px;
         background: #2e344e;
+
+        @media screen and (max-width: 991px) {
+          height: 0;
+        }
 
       }
 

@@ -3,20 +3,21 @@
 
   .project-card {
     position: relative;
+    cursor: pointer;
 
     &::before {
       position: absolute;
       content: "";
       top: 17px;
       left: 17px;
-      height: 200px;
+      height: calc(100% - 34px);
       width: 0;
       background-color: rgba(255, 255, 255, .7);
-      transition: .4s ease-in-out;
+      transition: .3s ease-in-out;
     }
 
     &:hover::before {
-      width: 286px;
+      width: calc(100% - 34px);
     }
 
     img {
@@ -25,12 +26,18 @@
   }
 
   .project-card-details {
-    color: #ffffff;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 20px;
 
     h4 {
-      margin-top: 20px;
       font-weight: 600;
     }
+
+    p {
+      color: #2e344e;
+    }
+
   }
 }
 

@@ -25,15 +25,16 @@
           background-color: transparent;
           border-radius: 0;
           border: 1px solid #2e344e;
+          padding: 25px 20px;
+          font-size: 16px;
+          color: #a4acc4;
         }
       }
 
-      .send-mail-btn {
-        border-radius: 0;
-      }
     }
 
     .contact-details {
+      margin-top: 20px;
       .card-style {
         border: none;
         margin-bottom: 20px;
