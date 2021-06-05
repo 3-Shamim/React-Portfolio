@@ -8,27 +8,15 @@ const Project = () => {
     const projects = [
         {
             id: 1,
-            projectImage: "/images/project-image/p1.jpg",
-            projectTitle: "ERP",
-            projectDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur."
+            projectImage: "/images/project-image/Fembula.png",
+            projectTitle: "Multi Vendor Ecommerce",
+            projectDescription: "This is a multi vendor ecommerce that built with ReactJS."
         },
         {
             id: 2,
-            projectImage: "/images/project-image/p2.jpg",
-            projectTitle: "Inventory",
-            projectDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur."
-        },
-        {
-            id: 3,
-            projectImage: "/images/project-image/p3.jpg",
-            projectTitle: "Workshop",
-            projectDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur."
-        },
-        {
-            id: 4,
-            projectImage: "/images/project-image/p3.jpg",
-            projectTitle: "Workshop",
-            projectDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur."
+            projectImage: "/images/project-image/s1.png",
+            projectTitle: "Admin Portal",
+            projectDescription: "This is a full functional admin portal that built with ReactJS, AntD, Spring Boot."
         },
     ]
 

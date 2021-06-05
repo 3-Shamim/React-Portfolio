@@ -42,54 +42,34 @@ const Resume = () => {
             strength: 80
         },
         {
-            id: 6,
-            skillName: "NodeJS",
-            strength: 80
-        },
-        {
             id: 7,
             skillName: "jQuery",
             strength: 80
         },
         {
-            id: 14,
-            skillName: "Dart",
-            strength: 90
-        },
-        {
             id: 15,
             skillName: "Flutter",
-            strength: 75
-        },
-        {
-            id: 13,
-            skillName: "Python",
-            strength: 90
+            strength: 60
         },
         {
             id: 9,
             skillName: "MySQL",
-            strength: 90
+            strength: 85
         },
         {
             id: 10,
             skillName: "PostgreSQL",
-            strength: 90
+            strength: 70
         },
         {
             id: 11,
             skillName: "Hibernate",
-            strength: 90
+            strength: 85
         },
         {
             id: 12,
             skillName: "MongoDB",
-            strength: 90
-        },
-        {
-            id: 16,
-            skillName: "GraphQL",
-            strength: 50
+            strength: 80
         }
     ]
 
