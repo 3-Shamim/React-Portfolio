@@ -36,6 +36,45 @@
 
     p {
       color: #2e344e;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .company-section {
+      margin-top: 10px;
+
+      .label {
+        margin-right: 10px;
+      }
+
+      .company {
+        font-weight: 600;
+      }
+    }
+
+    .contributes, .work-with {
+      margin-top: 10px;
+
+      p {
+        font-size: 12px;
+        border-bottom: 1px solid #ddd;
+        margin: 0;
+      }
+
+      span {
+        font-size: 13px;
+        font-weight: 600;
+        color: #3E3F47;
+
+        &::after {
+          content: ", ";
+        }
+
+        &:last-child::after {
+          content: "";
+        }
+      }
     }
 
   }
